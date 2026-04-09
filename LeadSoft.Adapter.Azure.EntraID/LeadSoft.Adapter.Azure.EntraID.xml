@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LeadSoft.Adapter.Azure.EntraID</name>
+    </assembly>
+    <members>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.AuthToken_ClientSecretId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.AuthToken_ClientSecretValue">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_VALUE.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.AuthToken_RedirectURL">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_REDIRECT_URL.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.ClientId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_CLIENT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.GroupMembers_ClientId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_CLIENT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.GroupMembers_ClientSecret">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_CLIENT_SECRET.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.GroupMembers_GroupId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_GROUP_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.GroupMembers_TenantId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_TENANT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AwsSecretsKey.TenantId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_TENANT_ID.
+            </summary>
+        </member>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.ClientId">
+            <summary>
+              Looks up a localized string similar to client_id.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.ClientSecret">
+            <summary>
+              Looks up a localized string similar to client_secret.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.Code">
+            <summary>
+              Looks up a localized string similar to code.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.GrantType">
+            <summary>
+              Looks up a localized string similar to grant_type.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.RedirectUri">
+            <summary>
+              Looks up a localized string similar to redirect_uri.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.RefreshToken">
+            <summary>
+              Looks up a localized string similar to refresh_token.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.Scope">
+            <summary>
+              Looks up a localized string similar to scope.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.UPN">
+            <summary>
+              Looks up a localized string similar to upn.
+            </summary>
+        </member>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.DisplayName">
+            <summary>
+              Looks up a localized string similar to displayName.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.GrantType_AuthorizationCode">
+            <summary>
+              Looks up a localized string similar to authorization_code.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.GrantType_RefreshToken">
+            <summary>
+              Looks up a localized string similar to refresh_token.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.MSGraph_ContactsRead">
+            <summary>
+              Looks up a localized string similar to https://graph.microsoft.com/Contacts.Read.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.MSGraph_DirectoryObjects">
+            <summary>
+              Looks up a localized string similar to https://graph.microsoft.com/v1.0/directoryObjects/{0}.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.MSGraph_MailRead">
+            <summary>
+              Looks up a localized string similar to https://graph.microsoft.com/Mail.Read.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.MSGraph_UserRead">
+            <summary>
+              Looks up a localized string similar to https://graph.microsoft.com/User.Read.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_Parameter.OAuth2_Url">
+            <summary>
+              Looks up a localized string similar to https://login.microsoftonline.com/{0}/oauth2/v2.0/token.
+            </summary>
+        </member>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.EnvVariable">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.AuthToken_ClientSecretId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.AuthToken_ClientSecretValue">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_VALUE.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.AuthToken_RedirectURL">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_AUTH_TOKEN_REDIRECT_URL.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.ClientId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_CLIENT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.GroupMembers_ClientId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_CLIENT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.GroupMembers_ClientSecret">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_CLIENT_SECRET.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.GroupMembers_GroupId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_GROUP_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.GroupMembers_TenantId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_GROUP_MEMBERS_TENANT_ID.
+            </summary>
+        </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.EnvVariable.TenantId">
+            <summary>
+              Looks up a localized string similar to AZURE_AD_TENANT_ID.
+            </summary>
+        </member>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.IAzureSSO">
+            <summary>
+            Defines methods for performing Azure Single Sign-On (SSO) operations, including group membership management and
+            user authentication, using OAuth and Azure Entra ID.
+            </summary>
+            <remarks>Implementations of this interface provide asynchronous operations for integrating with Azure
+            SSO scenarios, such as adding users to groups and retrieving user profiles. All methods are asynchronous and may
+            require appropriate Azure permissions. The interface inherits from IDisposable, indicating that implementations
+            may hold resources that should be released when no longer needed.</remarks>
+        </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.IAzureSSO.AddGroupMembersAsync(System.String[])">
+            <summary>
+            Asynchronously adds one or more members to the group using their email addresses.
+            </summary>
+            <param name="memberEmails">An array of email addresses representing the users to add as group members. Each email address must be a
+            valid, non-empty string.</param>
+            <returns>A task that represents the asynchronous operation. The task result is <see langword="true"/> if all members
+            were successfully added; otherwise, <see langword="false"/>.</returns>
+        </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.IAzureSSO.GetOAuthSSOAsync(System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Initiates an OAuth single sign-on (SSO) authentication process using the specified user code.
+            </summary>
+            <param name="oAuthUserCode">The user code received from the OAuth provider to initiate the SSO authentication. Cannot be null or empty.</param>
+            <param name="relogin">true to force a new authentication session even if a valid session exists; otherwise, false.</param>
+            <param name="getPicture">true to include the user's profile picture in the response if available; otherwise, false.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains a DTOAzureEntraIDSSOResponse
+            object with the authentication result and user information.</returns>
+        </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.IAzureSSO.GetUserProfileAsync(System.String)">
+            <summary>
+            Asynchronously retrieves the user profile associated with the specified email address.
+            </summary>
+            <param name="userEmail">The email address of the user whose profile is to be retrieved. Cannot be null or empty.</param>
+            <returns>A task that represents the asynchronous operation. The task result contains a
+            DTOAzureEntraIDUserProfileResponse object with the user's profile information.</returns>
+        </member>
+        <member name="T:LeadSoft.Adapter.Azure.EntraID.Register">
+            <summary>
+            Provides extension methods for registering Azure single sign-on (SSO) services with an IServiceCollection for
+            dependency injection.
+            </summary>
+            <remarks>Use the methods in this class to add Azure SSO functionality to an application's service
+            collection. These methods enable consuming components to receive an IAzureSSO implementation via dependency
+            injection. Call the appropriate method during application startup to configure the desired service
+            lifetime.</remarks>
+        </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.Register.AddSingletonAzureSSO(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds a singleton implementation of the IAzureSSO service to the specified IServiceCollection.
+            </summary>
+            <remarks>Call this method during application startup to register Azure single sign-on services
+            for dependency injection. This enables consuming components to receive an IAzureSSO instance via constructor
+            injection.</remarks>
+            <param name="services">The IServiceCollection to which the IAzureSSO singleton service will be added.</param>
+        </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.Register.AddScopedAzureSSO(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds the Azure single sign-on (SSO) service to the specified service collection with a scoped lifetime.
+            </summary>
+            <remarks>This extension method registers the IAzureSSO implementation for dependency
+            injection, enabling Azure SSO functionality throughout the application's scope.</remarks>
+            <param name="services">The service collection to which the Azure SSO service will be added. Cannot be null.</param>
+        </member>
+    </members>
+</doc>

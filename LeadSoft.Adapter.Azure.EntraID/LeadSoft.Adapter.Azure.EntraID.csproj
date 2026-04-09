@@ -1,0 +1,102 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+   <TargetFramework>net10.0</TargetFramework>
+	  <Company>LeadSoft® Soluções Web Ltda</Company>
+	  <Authors>Lucas R. Tavares</Authors>
+	  <Product>LeadSoft® Adapter Azure EntraID</Product>
+	  <AssemblyVersion>10.0.0.0</AssemblyVersion>
+	  <FileVersion>10.0.0.0</FileVersion>
+	  <Version>10.0.0</Version>
+	  <RepositoryType>git</RepositoryType>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <Description>Pacote Open Source para integração com Azure EntraID via Dependency Injection.</Description>
+	  <RepositoryUrl>https://github.com/LeadSoft-Solucoes-Web/leadsoft-adapter-azure</RepositoryUrl>
+	  <NeutralLanguage>pt-BR</NeutralLanguage>
+	  <PackageIcon>LeadSoft.png</PackageIcon>
+	  <PackageProjectUrl>https://www.leadsoft.inf.br/</PackageProjectUrl>
+	  <SignAssembly>False</SignAssembly>
+	  <Nullable>enable</Nullable>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Title>LeadSoft® Adapter Azure EntraID</Title>
+	  <Copyright>© LeadSoft® 2026</Copyright>
+	  <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+	  <AnalysisLevel>latest-all</AnalysisLevel>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageReadmeFile>README.md</PackageReadmeFile>
+	  <GenerateDocumentationFile>True</GenerateDocumentationFile>
+	  <DocumentationFile>.\LeadSoft.Adapter.Azure.EntraID.xml</DocumentationFile>
+	  <ApplicationIcon>LeadSoft.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="LeadSoft.ico" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Include="..\LeadSoft.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+    <PackageReference Include="Azure.Identity" Version="1.20.0" />
+    <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.3" />
+    <PackageReference Include="LeadSoft.Common.GlobalDomain" Version="10.0.7" />
+    <PackageReference Include="LeadSoft.Common.Library" Version="10.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Graph" Version="5.103.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="AwsSecretsKey.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AwsSecretsKey.resx</DependentUpon>
+    </Compile>
+    <Compile Update="AzureSSO_FormContent.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AzureSSO_FormContent.resx</DependentUpon>
+    </Compile>
+    <Compile Update="AzureSSO_Parameter.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>AzureSSO_Parameter.resx</DependentUpon>
+    </Compile>
+    <Compile Update="EnvVariable.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>EnvVariable.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AwsSecretsKey.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AwsSecretsKey.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AzureSSO_FormContent.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AzureSSO_FormContent.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="AzureSSO_Parameter.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AzureSSO_Parameter.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="EnvVariable.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>EnvVariable.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

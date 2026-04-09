@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path="LeadSoft.ico" />
+    <File Path="LeadSoft.png" />
+    <File Path="LICENSE" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="LeadSoft.Adapter.Azure.EntraID/LeadSoft.Adapter.Azure.EntraID.csproj" Id="2acfc869-3069-461d-985a-ddac05758fe4" />
+  <Project Path="LeadSoft.Adapter.Azure.OCR/LeadSoft.Adapter.Azure.OCR.csproj" Id="0a011c38-9793-4f7d-94ad-868fcda44db0" />
+  <Project Path="LeadSoft.Adapter.Azure.SpeechToText/LeadSoft.Adapter.Azure.SpeechToText.csproj" Id="e78fcae5-c4b9-4a46-844e-b8f82d91fb93" />
+  <Project Path="LeadSoft.Adapter.Azure.Tests/LeadSoft.Adapter.Azure.Tests.csproj" Id="a47602a8-ba5f-4383-b475-aaba72b17588" />
+</Solution>
