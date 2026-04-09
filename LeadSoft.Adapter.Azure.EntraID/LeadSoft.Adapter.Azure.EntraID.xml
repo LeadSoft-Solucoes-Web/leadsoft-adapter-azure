@@ -275,6 +275,13 @@
             <returns>A task that represents the asynchronous operation. The task result contains a
             DTOAzureEntraIDUserProfileResponse object with the user's profile information.</returns>
         </member>
+        <member name="M:LeadSoft.Adapter.Azure.EntraID.IAzureSSO.GetEnvironmentAsync">
+            <summary>
+            Asynchronously retrieves the current environment name or identifier.
+            </summary>
+            <returns>A task that represents the asynchronous operation. The task result contains a string representing the
+            current environment name or identifier.</returns>
+        </member>
         <member name="T:LeadSoft.Adapter.Azure.EntraID.Register">
             <summary>
             Provides extension methods for registering Azure single sign-on (SSO) services with an IServiceCollection for
