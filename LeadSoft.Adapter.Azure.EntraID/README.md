@@ -13,6 +13,27 @@ Este pacote é mantido pela [LeadSoft®](https://leadsoft.com.br/), uma empresa 
 - Integração simples com _Dependency Injection_ (DI) do .NET.
 - Tratamento centralizado de erros e respostas HTTP.
 - Open Source (MIT License).
+- Caso haja AWS Secrets Manager configurado, o pacote irá buscar as configurações de ambiente por lá. Caso contrário, ele buscará as variáveis de ambiente do sistema.
+
+## Configuração e uso
+
+1. **Instalação**: Adicione o pacote `LeadSoft.Adapter.Azure.EntraID` ao seu projeto via NuGet.
+2. **Configuração**: Configure as credenciais e parâmetros necessários para a integração com o Azure EntraID (Client ID, Tenant ID, etc.) usando AWS Secrets Manager ou variáveis de ambiente.
+
+### Aws Secrets Manager ou Variáveis de ambiente
+
+| **Secrets Names**                       | **Descrição**                                      | 
+|-----------------------------------------|----------------------------------------------------|
+| AZURE_AD_CLIENT_ID                      | Azure Entra Id (AD) Client Id                      |
+| AZURE_AD_TENANT_ID                      | Azure Entra Id (AD) Tenant Id                      |
+| AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_ID    | Azure Entra Id (AD) Auth Token Client Secret Id    |
+| AZURE_AD_AUTH_TOKEN_CLIENT_SECRET_VALUE | Azure Entra Id (AD) Auth Token Client Secret Value |
+| AZURE_AD_AUTH_TOKEN_REDIRECT_URL        | Azure Entra Id (AD) Auth Token Redirect URL        |
+| AZURE_AD_GROUP_MEMBERS_CLIENT_ID        | Azure Entra Id (AD) Group Members Client Id        |
+| AZURE_AD_GROUP_MEMBERS_CLIENT_SECRET    | Azure Entra Id (AD) Group Members Client Secret    |
+| AZURE_AD_GROUP_MEMBERS_GROUP_ID         | Azure Entra Id (AD) Group Members Group Id         |
+| AZURE_AD_GROUP_MEMBERS_TENANT_ID        | Azure Entra Id (AD) Group Members Tenant Id        |
+
 
 ## Métodos disponíveis
 - `Task<bool> AddGroupMembersAsync(params string[] memberEmails)`
@@ -21,6 +42,8 @@ Este pacote é mantido pela [LeadSoft®](https://leadsoft.com.br/), uma empresa 
   -  Autentica o usuário via Azure Entra ID SSO do App Registration cadastrado.
 - `Task<DTOAzureEntraIDUserProfileResponse> GetUserProfileAsync(string userEmail)`
   - Obtém o nome e avatar do perfil do usuário Entra ID pelo seu e-mail.
+- `Task<string> GetEnvironmentAsync()`
+  - Retorna o ambiente atual da aplicação (Desenvolvimento, Homologação ou Produção) conforme configuração de inicialização (Aws Secrets Manager ou Variáveis de ambiente).
 
 ---
 

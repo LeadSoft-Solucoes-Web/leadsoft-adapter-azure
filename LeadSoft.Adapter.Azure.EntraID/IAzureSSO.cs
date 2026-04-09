@@ -38,5 +38,12 @@ namespace LeadSoft.Adapter.Azure.EntraID
         /// <returns>A task that represents the asynchronous operation. The task result contains a
         /// DTOAzureEntraIDUserProfileResponse object with the user's profile information.</returns>
         Task<DTOAzureEntraIDUserProfileResponse> GetUserProfileAsync(string userEmail);
+
+        /// <summary>
+        /// Asynchronously retrieves the current environment name or identifier.
+        /// </summary>
+        /// <returns>A task that represents the asynchronous operation. The task result contains a string representing the
+        /// current environment name or identifier.</returns>
+        Task<string> GetEnvironmentAsync();
     }
 }

@@ -129,6 +129,14 @@ namespace LeadSoft.Adapter.Azure.EntraID
             }
         }
 
+        public async Task<string> GetEnvironmentAsync()
+        {
+            if (_AwsSecretManager is not null)
+                return $"Aws Secrets Manager: {await _AwsSecretManager.GetSecretValueAsync(EnvUtil.AspNet)}";
+
+            return $"Environment Variable: {EnvUtil.Get(EnvUtil.AspNet)}";
+        }
+
         #region [ Private methods ]
 
         private async Task<string> GetOAuthSSOEndpoint()
