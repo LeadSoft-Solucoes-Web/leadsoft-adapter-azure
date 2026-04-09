@@ -36,8 +36,6 @@
             Environment.SetEnvironmentVariable("AZURE_AD_GROUP_MEMBERS_CLIENT_SECRET", "");
             Environment.SetEnvironmentVariable("AZURE_AD_GROUP_MEMBERS_GROUP_ID", "");
             Environment.SetEnvironmentVariable("AZURE_AD_GROUP_MEMBERS_TENANT_ID", "");
-
-
         }
 
         /// <summary>

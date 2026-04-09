@@ -1,7 +1,9 @@
-﻿using LeadSoft.Adapter.Aws.SecretsManager;
+﻿using Amazon.SecurityToken.Model;
+using LeadSoft.Adapter.Aws.SecretsManager;
 using LeadSoft.Adapter.Azure.EntraID;
 using LeadSoft.Adapter.Azure.EntraID.Contracts;
 using LeadSoft.Adapter.Azure.Tests.EntraID.Fixtures;
+using LeadSoft.Common.Library.EnvUtils;
 using Microsoft.Extensions.Logging;
 using Xunit.Abstractions;
 
@@ -18,20 +20,20 @@ namespace LeadSoft.Adapter.Azure.Tests.EntraID
         {
             _Output = output;
 
-            //AssumeRoleRequest assumeRoleRequest = new()
-            //{
-            //    RoleArn = EnvUtil.Get("AWS_SECRETS_MANAGER_ROLE_ARN"),
-            //    RoleSessionName = EnvUtil.Get("AWS_SECRETS_MANAGER_ROLE_SESSION_NAME"),
-            //};
+            AssumeRoleRequest assumeRoleRequest = new()
+            {
+                RoleArn = EnvUtil.Get("AWS_SECRETS_MANAGER_ROLE_ARN"),
+                RoleSessionName = EnvUtil.Get("AWS_SECRETS_MANAGER_ROLE_SESSION_NAME"),
+            };
 
-            //_AwsSecretsManager = new AwsSecretManager(assumeRoleRequest, _Logger);
+            _AwsSecretsManager = new AwsSecretManager(assumeRoleRequest, _Logger);
         }
 
         [Theory]
-        [InlineData("", true)]
+        [InlineData("", false)]
         public async Task GetOAuthSSOAsync(string code, bool avatar)
         {
-            IAzureSSO azureSSO = new AzureSSO();
+            IAzureSSO azureSSO = new AzureSSO(_AwsSecretsManager);
 
             DTOAzureEntraIDSSOResponse dtoResponse = await azureSSO.GetOAuthSSOAsync(code, false, avatar);
 

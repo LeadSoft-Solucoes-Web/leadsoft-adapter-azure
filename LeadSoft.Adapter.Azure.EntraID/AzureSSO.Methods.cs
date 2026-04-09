@@ -141,7 +141,7 @@ namespace LeadSoft.Adapter.Azure.EntraID
 
         private async Task<string> GetOAuthSSOEndpoint()
             => _AwsSecretManager is not null
-                ? AzureSSO_Parameter.OAuth2_Url.Fill(_AwsSecretManager.GetSecretValueAsync(AwsSecretsKey.TenantId))
+                ? AzureSSO_Parameter.OAuth2_Url.Fill(await _AwsSecretManager.GetSecretValueAsync(AwsSecretsKey.TenantId))
                 : AzureSSO_Parameter.OAuth2_Url.Fill(EnvUtil.Get(EnvVariable.TenantId));
 
         private async Task<FormUrlEncodedContent> GetOAuthContent(string oAuthToken, bool reLogin)
