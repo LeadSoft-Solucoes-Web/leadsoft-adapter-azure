@@ -9,7 +9,7 @@
   <ItemGroup>
     <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.3" />
     <PackageReference Include="LeadSoft.Common.Library" Version="10.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.7" />
   </ItemGroup>
 
   <ItemGroup>
