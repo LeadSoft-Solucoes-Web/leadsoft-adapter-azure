@@ -124,6 +124,15 @@ namespace LeadSoft.Adapter.Azure.EntraID {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to unique_name.
+        /// </summary>
+        internal static string UniqueName {
+            get {
+                return ResourceManager.GetString("UniqueName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to upn.
         /// </summary>
         internal static string UPN {

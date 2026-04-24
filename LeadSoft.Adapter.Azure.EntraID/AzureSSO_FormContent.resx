@@ -138,7 +138,11 @@
   <data name="Scope" xml:space="preserve">
     <value>scope</value>
   </data>
+  <data name="UniqueName" xml:space="preserve">
+    <value>unique_name</value>
+  </data>
   <data name="UPN" xml:space="preserve">
     <value>upn</value>
+    <comment>Deprecated by Microsoft.</comment>
   </data>
 </root>

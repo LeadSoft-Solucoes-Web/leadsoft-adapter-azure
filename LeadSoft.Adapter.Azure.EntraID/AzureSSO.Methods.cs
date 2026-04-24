@@ -79,12 +79,14 @@ namespace LeadSoft.Adapter.Azure.EntraID
                 throw new BadRequestAppException(oauthTokenData.ErrorDescription);
 
             if (!getPicture)
-                return new DTOAzureEntraIDSSOResponse(oauthTokenData.RefreshToken, oauthTokenData.AccessToken.RetrieveClaimField(AzureSSO_FormContent.UPN));
+                return new DTOAzureEntraIDSSOResponse(oauthTokenData.RefreshToken, oauthTokenData.AccessToken.RetrieveClaimField(AzureSSO_FormContent.UniqueName));
 
-            string integrationId = oauthTokenData.AccessToken.RetrieveClaimField(AzureSSO_FormContent.UPN);
+            string integrationId = oauthTokenData.AccessToken.RetrieveClaimField(AzureSSO_FormContent.UniqueName);
 
             return new DTOAzureEntraIDSSOResponse(oauthTokenData.RefreshToken, integrationId).SetAvatar(await GetUserProfileAsync(integrationId));
         }
+
+
 
         public async Task<DTOAzureEntraIDUserProfileResponse> GetUserProfileAsync(string userEmail)
         {

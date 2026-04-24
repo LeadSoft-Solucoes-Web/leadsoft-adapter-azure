@@ -116,6 +116,11 @@
               Looks up a localized string similar to scope.
             </summary>
         </member>
+        <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.UniqueName">
+            <summary>
+              Looks up a localized string similar to unique_name.
+            </summary>
+        </member>
         <member name="P:LeadSoft.Adapter.Azure.EntraID.AzureSSO_FormContent.UPN">
             <summary>
               Looks up a localized string similar to upn.

@@ -5,9 +5,9 @@
 	  <Company>LeadSoft® Soluções Web Ltda</Company>
 	  <Authors>Lucas R. Tavares</Authors>
 	  <Product>LeadSoft® Adapter Azure EntraID</Product>
-	  <AssemblyVersion>10.0.2.0</AssemblyVersion>
-	  <FileVersion>10.0.2.0</FileVersion>
-	  <Version>10.0.2</Version>
+	  <AssemblyVersion>10.0.3.0</AssemblyVersion>
+	  <FileVersion>10.0.3.0</FileVersion>
+	  <Version>10.0.3</Version>
 	  <RepositoryType>git</RepositoryType>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 	  <Description>Pacote Open Source para integração com Azure EntraID via Dependency Injection.</Description>
