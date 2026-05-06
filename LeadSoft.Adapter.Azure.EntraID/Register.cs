@@ -17,7 +17,8 @@ namespace LeadSoft.Adapter.Azure.EntraID
         /// </summary>
         /// <remarks>Call this method during application startup to register Azure single sign-on services
         /// for dependency injection. This enables consuming components to receive an IAzureSSO instance via constructor
-        /// injection.</remarks>
+        /// injection.
+        /// Make sure you have the Environment Variables set or AWS Secrets Manager correctly before using this method.</remarks>
         /// <param name="services">The IServiceCollection to which the IAzureSSO singleton service will be added.</param>
         public static void AddSingletonAzureSSO(this IServiceCollection services)
         {
@@ -28,7 +29,10 @@ namespace LeadSoft.Adapter.Azure.EntraID
         /// Adds the Azure single sign-on (SSO) service to the specified service collection with a scoped lifetime.
         /// </summary>
         /// <remarks>This extension method registers the IAzureSSO implementation for dependency
-        /// injection, enabling Azure SSO functionality throughout the application's scope.</remarks>
+        /// injection, enabling Azure SSO functionality throughout the application's scope.
+        /// 
+        /// Make sure you have the Environment Variables set or AWS Secrets Manager correctly before using this method.
+        /// </remarks>
         /// <param name="services">The service collection to which the Azure SSO service will be added. Cannot be null.</param>
         public static void AddScopedAzureSSO(this IServiceCollection services)
         {

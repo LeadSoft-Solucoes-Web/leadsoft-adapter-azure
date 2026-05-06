@@ -9,7 +9,6 @@ using LeadSoft.Common.Library.Extensions;
 using LeadSoft.Common.Library.Extensions.Helpers;
 using Microsoft.Graph;
 using Microsoft.Graph.Models;
-using System.Net;
 using System.Text;
 
 namespace LeadSoft.Adapter.Azure.EntraID
@@ -75,7 +74,7 @@ namespace LeadSoft.Adapter.Azure.EntraID
                                                 ? throw new BadRequestAppException($"Unexpected content type: {response.Content.Headers.ContentType}. Content: {responseContent}")
                                                 : responseContent.JsonToObject<OAuthTokenData>();
 
-            if (response.StatusCode == HttpStatusCode.BadRequest)
+            if (!response.IsSuccessStatusCode)
                 throw new BadRequestAppException(oauthTokenData.ErrorDescription);
 
             if (!getPicture)
