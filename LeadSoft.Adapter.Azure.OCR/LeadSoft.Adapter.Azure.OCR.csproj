@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.6" />
-    <PackageReference Include="LeadSoft.Common.Library" Version="10.0.4" />
+    <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.7" />
+    <PackageReference Include="LeadSoft.Common.Library" Version="10.0.5" />
   </ItemGroup>
 
   <ItemGroup>

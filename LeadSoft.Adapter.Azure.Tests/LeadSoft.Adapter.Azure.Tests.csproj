@@ -12,13 +12,13 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.6" />
-    <PackageReference Include="LeadSoft.Common.GlobalDomain" Version="10.0.11" />
-    <PackageReference Include="LeadSoft.Common.Library" Version="10.0.4" />
+    <PackageReference Include="LeadSoft.Adapter.Aws.SecretsManager" Version="10.1.7" />
+    <PackageReference Include="LeadSoft.Common.GlobalDomain" Version="10.0.16" />
+    <PackageReference Include="LeadSoft.Common.Library" Version="10.0.5" />
     <PackageReference Include="Microsoft.Kiota.Abstractions" Version="2.0.0" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.7.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.9.0" />
     <PackageReference Include="xunit" Version="2.9.3" />
-    <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
